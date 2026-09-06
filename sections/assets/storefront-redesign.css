@@ -1,0 +1,112 @@
+/* Shopify Storefront Redesign
+   Responsive layout and conversion-focused styling
+*/
+
+.storefront-hero {
+  padding: 72px 0;
+  overflow: hidden;
+}
+
+.storefront-hero__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 48px;
+}
+
+.storefront-hero__text {
+  max-width: 620px;
+}
+
+.storefront-hero__eyebrow {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.storefront-hero__text h1 {
+  margin: 0 0 20px;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.05;
+}
+
+.storefront-hero__description {
+  max-width: 520px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.storefront-hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 28px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.storefront-hero__button:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.storefront-hero__image {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.storefront-hero__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media screen and (max-width: 989px) {
+  .storefront-hero {
+    padding: 56px 0;
+  }
+
+  .storefront-hero__content {
+    gap: 32px;
+  }
+
+  .storefront-hero__text h1 {
+    font-size: clamp(34px, 6vw, 50px);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 749px) {
+  .storefront-hero {
+    padding: 40px 0;
+  }
+
+  .storefront-hero__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .storefront-hero__text {
+    max-width: none;
+  }
+
+  .storefront-hero__description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .storefront-hero__button {
+    width: 100%;
+  }
+
+  .storefront-hero__image {
+    order: -1;
+  }
+}
