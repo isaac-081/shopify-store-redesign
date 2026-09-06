@@ -1,0 +1,64 @@
+/* Storefront Benefits
+   Trust-building benefits section
+*/
+
+.storefront-benefits {
+  padding: 56px 0;
+}
+
+.storefront-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.storefront-benefit {
+  padding: 28px 24px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.storefront-benefit__icon {
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.storefront-benefit h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.storefront-benefit p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+/* Tablet */
+@media screen and (max-width: 989px) {
+  .storefront-benefits {
+    padding: 48px 0;
+  }
+
+  .storefront-benefits__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 749px) {
+  .storefront-benefits {
+    padding: 40px 0;
+  }
+
+  .storefront-benefits__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .storefront-benefit {
+    padding: 24px 20px;
+  }
+}
